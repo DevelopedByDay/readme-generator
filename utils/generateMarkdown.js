@@ -1,59 +1,83 @@
+const generateBadges = badgeArr => {
+  if (!badgeList) {
+    badgeList = []
+  };
+  if (badgeArr.license.includes('MIT')) {
+    badgeList.push(`![MIT](https://img.shields.io/badge/license-MIT-green)`)
+  }
+  if (badgeArr.license.includes('Apache')) {
+    badgeList.push(`![Apache](https://img.shields.io/badge/license-Apache-blue)`)
+  }
+  if (badgeArr.license.includes('CPAN')) {
+    badgeList.push(`![CPAN](https://img.shields.io/badge/license-lgpl_2_1-blue)`)
+  }
+  if (badgeArr.license.includes('GPL')) {
+    badgeList.push('![GPL](https://img.shields.io/badge/license-GPL-blue)')
+  }
+  if (badgeArr.license.includes('BSD')) {
+    badgeList.push('![BSD](https://img.shields.io/badge/license-BSD-green)')
+  }
+  return badgeList
+};
+
 // function to generate markdown for README
 function generateMarkdown(data) {
+
   return `
+${generateBadges(data)}
 
 # ${data.title}
 
-  ## Description
+## Description
 
-  ${data.description}
+${data.description}
 
-  ## Table of Contents
+## Table of Contents
   
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Credits](#credits)
-  * [License](#license)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
   
-  ## Installation
+## Installation
 
-  ${data.installation}
+${data.installation}
 
-  ## Usage
+## Usage
 
-  ${data.usage}
+${data.usage}
 
-  ## Credits
+## Credits
 
-  ${data.credits}
+${data.credits}
 
-  ## License
+## License
 
-  ${data.license}
+${data.license}
 
-  ## Contributing
+## Contributing
 
-  ${data.contributions}
+${data.contributions}
 
-  ## Tests
+## Tests
 
-  ${data.tests}
+${data.tests}
 
-  ## Questions
+## Questions
 
-  Contact me at ${data.email}
+Contact me at ${data.email}
 
-  Work with me at ![${data.github}](https://github.com/${data.github})
+Work with me at ![${data.github}](https://github.com/${data.github})
 
-  Project by ${data.name}
-
-
+Project by ${data.name}
 
 
-  This ReadMe.md file was generated with the help of ![DevelopedByDay](https://github.com/DevelopedByDay)
+
+
+This ReadMe.md file was generated with the help of ![DevelopedByDay](https://github.com/DevelopedByDay)
 `;
 }
 

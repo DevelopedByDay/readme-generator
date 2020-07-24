@@ -1,7 +1,9 @@
 # Professional README Generator
 
 ## Description 
-The code contained within this repository allows for the generation of professional Readme markdown file for any project. Via a series of prompts in the terminal using node.js you can use this package to create your own professional readme! 
+The code contained within this repository allows for the generation of professional Readme markdown file for any project. Via a series of prompts in the terminal using node.js you can use this package to create your own professional readme! These will generate in the "dist" folder. 
+
+There is an example generated ReadMe in the "dist" folder of the repository.
 
 ## Video Walkthrough
 
@@ -53,6 +55,8 @@ If you would like to imporve this application please find it at ![DevelopedByDay
 In terminal try the following! (Each new line represents clicking "enter")
 
 node index 
+
+enter your information in each section
 
 
 

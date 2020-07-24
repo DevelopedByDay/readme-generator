@@ -23,7 +23,7 @@ const questions = [
     },
     {
         type:'input',
-        name: 'descirption',
+        name: 'description',
         message: "Describe your project. (Required)",
         validate: nameInput => {
             if(nameInput) {
