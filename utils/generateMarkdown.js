@@ -1,9 +1,8 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  ${data.badges}
 
-  # ${data.title}
+# ${data.title}
 
   ## Description
 
@@ -47,7 +46,9 @@ function generateMarkdown(data) {
 
   Contact me at ${data.email}
 
-  Work with me at ${data.github}
+  Work with me at ![${data.github}](https://github.com/${data.github})
+
+  Project by ${data.name}
 
 
 
