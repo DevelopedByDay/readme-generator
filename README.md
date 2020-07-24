@@ -5,13 +5,17 @@ The code contained within this repository allows for the generation of professio
 
 There is an example generated ReadMe in the "dist" folder of the repository.
 
+The assets folder contains screenshot and video walkthrough.
+
 ## Video Walkthrough
 
-![Video Walkthrough](/assets/videos/walkthrough.mov)
+![Video Walkthrough](./assets/videos/walkthrough.webm)  - shows node functions working and generating readme.
+
+![Video Walkthrough 2](./assets/videos/walkthrough2.webm) - shows the table of contents working. 
 
 ## Screenshot
 
-![Screenshot](/assets/images/screenshot.png)
+![Screenshot](./assets/images/screenshot.png)
 
 ## Table of Contents (Optional)
 

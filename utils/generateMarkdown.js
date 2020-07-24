@@ -1,7 +1,7 @@
+//  this function generates badges based on licesne response 
 const generateBadges = badgeArr => {
-  if (!badgeList) {
-    badgeList = []
-  };
+  badgeList = [];
+
   if (badgeArr.license.includes('MIT')) {
     badgeList.push(`![MIT](https://img.shields.io/badge/license-MIT-green)`)
   }
