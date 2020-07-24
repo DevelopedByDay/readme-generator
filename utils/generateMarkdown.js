@@ -1,6 +1,8 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `
+  ${data.badges}
+
   # ${data.title}
 
   ## Description
@@ -36,10 +38,6 @@ function generateMarkdown(data) {
   ## Contributing
 
   ${data.contributions}
-
-  ## Badges
-
-  ${data.badges}
 
   ## Tests
 

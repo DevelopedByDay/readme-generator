@@ -46,7 +46,7 @@ MIT
 
 ## Contributing
 
-If you would like to imporve this application please find it at https://github.com/DevelopedByDay/readme-generator 
+If you would like to imporve this application please find it at ![DevelopedByDay](https://github.com/DevelopedByDay/readme-generator) 
 
 ## Tests
 
